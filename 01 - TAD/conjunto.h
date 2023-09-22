@@ -4,7 +4,7 @@
 #define maximo 1024
 
 typedef int t_elemento;
-typedef char t_conjunto[maximo + 1];
+typedef t_elemento t_conjunto[maximo + 1];
 
 #define NAO_EXISTE -1;
 #define JA_EXISTE -2;
