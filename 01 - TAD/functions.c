@@ -17,7 +17,10 @@ static int esta_nos_limites(t_elemento e)
 
 static int pertence(t_elemento e, t_conjunto A)
 {
-  return A[e];
+  if (esta_nos_limites(e))
+    return A[e];
+  else
+    return INVALIDO;
 }
 
 int inserir(t_elemento e, t_conjunto A)
