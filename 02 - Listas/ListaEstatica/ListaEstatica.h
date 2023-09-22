@@ -1,5 +1,5 @@
-#ifndef LISTA_H
-#define LISTA_H
+#ifndef LISTAESTATICA_H
+#define LISTAESTATICA_H
 
 #define MAX 128
 
@@ -12,12 +12,14 @@
 
 typedef int t_chave;
 
-typedef struct {
+typedef struct
+{
   t_chave chave;
   char nome[50];
 } t_elemento;
 
-typedef struct {
+typedef struct
+{
   int ultimo;
   t_elemento lista[MAX];
 } t_lista;

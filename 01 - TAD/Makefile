@@ -1,5 +1,5 @@
-tad: main.c functions.c conjunto.h
-	gcc -o main main.c functions.c
+tad: main.c conjunto.c conjunto.h
+	gcc -o main main.c conjunto.c
 
 run: main.exe
 	./main
